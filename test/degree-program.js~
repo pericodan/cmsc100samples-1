@@ -56,7 +56,7 @@ describe('Degree Program', function () {
 		INSERT should return the newly created row in JSON format.
 		OK lang kahit mali :D
 	*/
-	describe('insert()', function () {
+	/*describe('insert()', function () {
 		it('should create a new degree program record', function (done) {
 			var degreeProgram = {
 				'code': 'BSDC',
@@ -71,19 +71,17 @@ describe('Degree Program', function () {
 					}
 					res.should.have.status(200);
 					res.body.should.have.keys(['degree_id','degree_code','description','total_units']);
-					//insertId = res.body.id;
+					insertId = res.body.id;
 					done();
 				});
 		});
-	});
+	});*/
 	
 	// Test update web service
 	describe('update()', function () {
-		it('should update a specific degree program record: ', function () {
+		it('should update a specific degree program record: total_units field only', function () {
 			var update = {
-				'units': 150,
-				'code': 'BSCS',
-				'description': 'BSComsci'
+				'units': 150
 			};
 			server
 				.put('/degree-programs/'+insertedId)
