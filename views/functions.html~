@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> </title>
+		<meta charset="utf-8"/>
+		<script src="dionisio_e7.js"> </script>
+	</head>
+	<body>
+		<script>
+			var a=new car(1111, "Toyota", "red");
+			a.start();
+			a.accelerate(20);
+			a.decelerate(7);
+		</script>
+	
+	</body>
+</html>
